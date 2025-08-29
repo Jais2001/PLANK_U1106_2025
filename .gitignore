@@ -1,0 +1,8 @@
+# This file is used to ignore files which are generated
+# ----------------------------------------------------------------------------
+
+U1106_2025/synthesis/
+U1106_2025/designer/
+U1106_2025/component/
+U1106_2025/tooldata
+U1106_2025/simulation/
