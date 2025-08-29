@@ -1,0 +1,572 @@
+KEY LIBERO "2024.2"
+KEY CAPTURE "2024.2.0.13"
+KEY DEFAULT_IMPORT_LOC "C:\Actelprj\A3P_Verilog_labs\lab2"
+KEY ProjectID "0"
+KEY HDLTechnology "VERILOG"
+KEY VERILOGMODE "SYSTEMVERILOG"
+KEY VHDLMODE "VHDL2008"
+KEY SYSTEMVERILOGMFCU "FALSE"
+KEY UseConstraintFlowTechnology "TRUE"
+KEY VendorTechnology_Family "SmartFusion2"
+KEY VendorTechnology_Die "PA4M500"
+KEY VendorTechnology_Package "vf400"
+KEY VendorTechnology_Speed "-1"
+KEY VendorTechnology_DieVoltage "1.2"
+KEY VendorTechnology_PART_RANGE "IND"
+KEY VendorTechnology_DSW_VCCA_VOLTAGE_RAMP_RATE "100_MS"
+KEY VendorTechnology_IO_DEFT_STD "LVCMOS25"
+KEY VendorTechnology_OPCONR ""
+KEY VendorTechnology_PLL_SUPPLY "PLL_SUPPLY_25"
+KEY VendorTechnology_RAD_EXPOSURE ""
+KEY VendorTechnology_RESERVEMIGRATIONPINS "0"
+KEY VendorTechnology_RESTRICTPROBEPINS "0"
+KEY VendorTechnology_RESTRICTSPIPINS "0"
+KEY VendorTechnology_SYSTEM_CONTROLLER_SUSPEND_MODE "0"
+KEY VendorTechnology_TARGETDEVICESFORMIGRATION "PA4M500"
+KEY VendorTechnology_TEMPR "IND"
+KEY VendorTechnology_UNUSED_MSS_IO_RESISTOR_PULL "None"
+KEY VendorTechnology_VCCI_1.2_VOLTR "COM"
+KEY VendorTechnology_VCCI_1.5_VOLTR "COM"
+KEY VendorTechnology_VCCI_1.8_VOLTR "COM"
+KEY VendorTechnology_VCCI_2.5_VOLTR "COM"
+KEY VendorTechnology_VCCI_3.3_VOLTR "COM"
+KEY VendorTechnology_VOLTR "IND"
+KEY ProjectLocation "D:\RFMW\APASS\PLANK_U1106_2025\U1106_2025\PLANK_U1106_2025"
+KEY ProjectDescription ""
+KEY UseRootLocationForLinkedFiles "FALSE"
+KEY RootLocationENVForLinkedFiles ""
+KEY RootLocationForLinkedFiles ""
+KEY GlobalIncludePaths ""
+KEY Pa4PeripheralNewSeq "GOOD"
+KEY MemoryMapDrcSeverity "FALSE"
+KEY LossOfDataDRCSeverity "TRUE"
+KEY IdWidthMismatchDRCSeverity "TRUE"
+KEY SimulationType "VERILOG"
+KEY Vendor "Actel"
+KEY ActiveRoot "PLANK_U1106::work"
+LIST REVISIONS
+VALUE="Impl1",NUM=1
+CURREV=1
+ENDLIST
+LIST GlobalIncludeFileList
+ENDLIST
+LIST FileManager
+VALUE "<project>\component\Actel\DirectCore\COREI2C\7.2.101\COREI2C.cxf,actgen_cxf"
+STATE="utd"
+TIME="1756451208"
+SIZE="949"
+PARENT="<project>\component\work\COREI2C_C1\COREI2C_C1.cxf"
+ENDFILE
+VALUE "<project>\component\Actel\DirectCore\COREI2C\7.2.101\mti\scripts\wave_usertb_vlog.do,do"
+STATE="utd"
+TIME="1744545814"
+SIZE="870"
+PARENT="<project>\component\Actel\DirectCore\COREI2C\7.2.101\COREI2C.cxf"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\component\Actel\DirectCore\COREI2C\7.2.101\rtl\vlog\core\corei2creal.v,hdl"
+STATE="utd"
+TIME="1744545814"
+SIZE="102338"
+PARENT="<project>\component\Actel\DirectCore\COREI2C\7.2.101\COREI2C.cxf"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\component\Actel\DirectCore\COREI2C\7.2.101\rtl\vlog\test\user\i2c_spk.v,tb_hdl"
+STATE="utd"
+TIME="1744545814"
+SIZE="2117"
+PARENT="<project>\component\Actel\DirectCore\COREI2C\7.2.101\COREI2C.cxf"
+PARENT="<project>\component\work\COREI2C_C1\COREI2C_C0_0\COREI2C_C1_COREI2C_C0_0_COREI2C.cxf"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\component\Actel\SgCore\FCCC\2.0.201\FCCC.cxf,actgen_cxf"
+STATE="utd"
+TIME="1756454490"
+SIZE="241"
+PARENT="<project>\component\work\FCCC_C0\FCCC_C0.cxf"
+ENDFILE
+VALUE "<project>\component\Actel\SgCore\OSC\2.0.101\OSC.cxf,actgen_cxf"
+STATE="utd"
+TIME="1756454494"
+SIZE="684"
+PARENT="<project>\component\work\OSC_C0\OSC_C0.cxf"
+ENDFILE
+VALUE "<project>\component\Actel\SgCore\OSC\2.0.101\osc_comps.v,hdl"
+STATE="utd"
+TIME="1737458232"
+SIZE="924"
+PARENT="<project>\component\Actel\SgCore\OSC\2.0.101\OSC.cxf"
+BEGIN_USE_CONSTRAINT
+TOOL_CONSTRAINT_TYPE="ideSYNTHESIS"
+TOOL_CONSTRAINT_USE="SYNPLIFY7_EXT"
+END_USE_CONSTRAINT
+USE_FOR_ANY_TOOL="FALSE"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\component\Actel\SgCore\OSC\2.0.101\osc_comps_pre.v,hdl"
+STATE="utd"
+TIME="1737458232"
+SIZE="726"
+PARENT="<project>\component\Actel\SgCore\OSC\2.0.101\OSC.cxf"
+BEGIN_USE_CONSTRAINT
+TOOL_CONSTRAINT_TYPE="ideSYNTHESIS"
+TOOL_CONSTRAINT_USE="PRECISION_EXT"
+END_USE_CONSTRAINT
+USE_FOR_ANY_TOOL="FALSE"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\component\work\COREI2C_C1\COREI2C_C0_0\COREI2C_C1_COREI2C_C0_0_COREI2C.cxf,actgen_cxf"
+STATE="utd"
+TIME="1756451208"
+SIZE="1171"
+PARENT="<project>\component\work\COREI2C_C1\COREI2C_C1.cxf"
+ENDFILE
+VALUE "<project>\component\work\COREI2C_C1\COREI2C_C0_0\coreparameters.v,tb_hdl"
+STATE="utd"
+TIME="1756451208"
+SIZE="716"
+PARENT="<project>\component\work\COREI2C_C1\COREI2C_C0_0\COREI2C_C1_COREI2C_C0_0_COREI2C.cxf"
+IS_READONLY="TRUE"
+IS_INCLUDED="TRUE"
+ENDFILE
+VALUE "<project>\component\work\COREI2C_C1\COREI2C_C0_0\rtl\vlog\core\corei2c.v,hdl"
+STATE="utd"
+TIME="1756451208"
+SIZE="17969"
+PARENT="<project>\component\work\COREI2C_C1\COREI2C_C0_0\COREI2C_C1_COREI2C_C0_0_COREI2C.cxf"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\component\work\COREI2C_C1\COREI2C_C0_0\rtl\vlog\test\user\tb_user_corei2c.v,tb_hdl"
+STATE="utd"
+TIME="1756451208"
+SIZE="25888"
+PARENT="<project>\component\work\COREI2C_C1\COREI2C_C0_0\COREI2C_C1_COREI2C_C0_0_COREI2C.cxf"
+MODULE_UNDER_TEST="testbench"
+SIMULATION_TIME="-all"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\component\work\COREI2C_C1\COREI2C_C1.cxf,actgen_cxf"
+STATE="utd"
+TIME="1756451208"
+SIZE="5485"
+ENDFILE
+VALUE "<project>\component\work\COREI2C_C1\COREI2C_C1.v,hdl"
+STATE="utd"
+TIME="1756451208"
+SIZE="5183"
+PARENT="<project>\component\work\COREI2C_C1\COREI2C_C1.cxf"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\component\work\FCCC_C0\FCCC_C0.cxf,actgen_cxf"
+STATE="utd"
+TIME="1756454491"
+SIZE="10451"
+ENDFILE
+VALUE "<project>\component\work\FCCC_C0\FCCC_C0.v,hdl"
+STATE="utd"
+TIME="1756454490"
+SIZE="6224"
+PARENT="<project>\component\work\FCCC_C0\FCCC_C0.cxf"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\component\work\FCCC_C0\FCCC_C0_0\FCCC_C0_FCCC_C0_0_FCCC.cxf,actgen_cxf"
+STATE="utd"
+TIME="1756454490"
+SIZE="706"
+PARENT="<project>\component\work\FCCC_C0\FCCC_C0.cxf"
+ENDFILE
+VALUE "<project>\component\work\FCCC_C0\FCCC_C0_0\FCCC_C0_FCCC_C0_0_FCCC.v,hdl"
+STATE="utd"
+TIME="1756454490"
+SIZE="1726"
+PARENT="<project>\component\work\FCCC_C0\FCCC_C0_0\FCCC_C0_FCCC_C0_0_FCCC.cxf"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\component\work\OSC_C0\OSC_C0.cxf,actgen_cxf"
+STATE="utd"
+TIME="1756454494"
+SIZE="2910"
+ENDFILE
+VALUE "<project>\component\work\OSC_C0\OSC_C0.v,hdl"
+STATE="utd"
+TIME="1756454494"
+SIZE="3049"
+PARENT="<project>\component\work\OSC_C0\OSC_C0.cxf"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\component\work\OSC_C0\OSC_C0_0\OSC_C0_OSC_C0_0_OSC.cxf,actgen_cxf"
+STATE="utd"
+TIME="1756454494"
+SIZE="461"
+PARENT="<project>\component\work\OSC_C0\OSC_C0.cxf"
+ENDFILE
+VALUE "<project>\component\work\OSC_C0\OSC_C0_0\OSC_C0_OSC_C0_0_OSC.v,hdl"
+STATE="utd"
+TIME="1756454494"
+SIZE="536"
+PARENT="<project>\component\work\OSC_C0\OSC_C0_0\OSC_C0_OSC_C0_0_OSC.cxf"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\component\work\PLANK_U1106\PLANK_U1106.cxf,actgen_cxf"
+STATE="utd"
+TIME="1756472779"
+SIZE="6862"
+ENDFILE
+VALUE "<project>\component\work\PLANK_U1106\PLANK_U1106.v,hdl"
+STATE="utd"
+TIME="1756472779"
+SIZE="8246"
+PARENT="<project>\component\work\PLANK_U1106\PLANK_U1106.cxf"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\constraint\io\plank_u1106.pdc,io_pdc"
+STATE="utd"
+TIME="1756472768"
+SIZE="13526"
+IS_TARGET="TRUE"
+ENDFILE
+VALUE "<project>\hdl\I2C_slave.sv,hdl"
+STATE="utd"
+TIME="1756450862"
+SIZE="11001"
+ENDFILE
+VALUE "<project>\hdl\max11642.v,hdl"
+STATE="utd"
+TIME="1756450862"
+SIZE="6716"
+ENDFILE
+VALUE "<project>\hdl\PLANK_UART_tb.sv,hdl"
+STATE="utd"
+TIME="1756450862"
+SIZE="3309"
+ENDFILE
+VALUE "<project>\hdl\spi_master.v,hdl"
+STATE="utd"
+TIME="1756450862"
+SIZE="7263"
+ENDFILE
+VALUE "<project>\hdl\spi_slave.sv,hdl"
+STATE="utd"
+TIME="1756450862"
+SIZE="4340"
+ENDFILE
+VALUE "<project>\hdl\tmp117.v,hdl"
+STATE="utd"
+TIME="1756450862"
+SIZE="11811"
+ENDFILE
+VALUE "<project>\hdl\tmp117_tb.sv,hdl"
+STATE="utd"
+TIME="1756450862"
+SIZE="4427"
+ENDFILE
+VALUE "<project>\hdl\top_module.v,hdl"
+STATE="utd"
+TIME="1756450827"
+SIZE="16213"
+ENDFILE
+VALUE "<project>\hdl\UART_Packet_Identifier.v,hdl"
+STATE="utd"
+TIME="1756450862"
+SIZE="8254"
+ENDFILE
+VALUE "<project>\hdl\UART_rx.v,hdl"
+STATE="utd"
+TIME="1756450862"
+SIZE="4615"
+ENDFILE
+VALUE "<project>\hdl\UART_tx.v,hdl"
+STATE="utd"
+TIME="1756450862"
+SIZE="4233"
+ENDFILE
+VALUE "<project>\simulation\run.do,do"
+STATE="utd"
+TIME="1756459946"
+SIZE="1753"
+ENDFILE
+VALUE "<project>\simulation\testbench_presynth_simulation.log,log"
+STATE="utd"
+TIME="1756459951"
+SIZE="66"
+ENDFILE
+VALUE "<project>\synthesis\PLANK_U1106.so,so"
+STATE="utd"
+TIME="1756451233"
+SIZE="255"
+ENDFILE
+VALUE "<project>\synthesis\PLANK_U1106.vm,syn_vm"
+STATE="utd"
+TIME="1756454513"
+SIZE="557380"
+ENDFILE
+VALUE "<project>\synthesis\PLANK_U1106_syn.prj,prj"
+STATE="utd"
+TIME="1756450963"
+SIZE="2440"
+ENDFILE
+VALUE "<project>\synthesis\PLANK_U1106_vm.sdc,syn_sdc"
+STATE="utd"
+TIME="1756451232"
+SIZE="1061"
+ENDFILE
+ENDLIST
+LIST UsedFile
+ENDLIST
+LIST NewModulesInfo
+LIST "COREI2C_C1_COREI2C_C0_0_COREI2C::work"
+FILE "<project>\component\work\COREI2C_C1\COREI2C_C0_0\rtl\vlog\core\corei2c.v,hdl"
+LIST Other_Association
+VALUE "<project>\component\Actel\DirectCore\COREI2C\7.2.101\rtl\vlog\test\user\i2c_spk.v,tb_hdl"
+VALUE "<project>\component\work\COREI2C_C1\COREI2C_C0_0\rtl\vlog\test\user\tb_user_corei2c.v,tb_hdl"
+VALUE "<project>\component\work\COREI2C_C1\COREI2C_C0_0\coreparameters.v,tb_hdl"
+ENDLIST
+ENDLIST
+LIST "PLANK_U1106::work"
+FILE "<project>\component\work\PLANK_U1106\PLANK_U1106.v,hdl"
+LIST PNRConstraints
+VALUE "<project>\constraint\io\plank_u1106.pdc,io_pdc"
+ENDLIST
+LIST ProjectState5.1
+LIST Impl1
+ideSYNTHESIS(<project>\synthesis\PLANK_U1106.vm,syn_vm)=StateSuccess
+LIST FlowOptions
+UsePhySynth=FALSE
+UseSynth=TRUE
+UseFhbAutoInst=FALSE
+ENDLIST
+Used_File_List
+ENDUsed_File_List
+ENDLIST
+ENDLIST
+ENDLIST
+ENDLIST
+LIST AssociatedStimulus
+ENDLIST
+LIST Other_Association
+LIST COREI2C_C1_COREI2C_C0_0_COREI2C
+VALUE "<project>\component\Actel\DirectCore\COREI2C\7.2.101\rtl\vlog\test\user\i2c_spk.v,tb_hdl"
+VALUE "<project>\component\work\COREI2C_C1\COREI2C_C0_0\rtl\vlog\test\user\tb_user_corei2c.v,tb_hdl"
+VALUE "<project>\component\work\COREI2C_C1\COREI2C_C0_0\coreparameters.v,tb_hdl"
+ENDLIST
+ENDLIST
+LIST SimulationOptions
+UseAutomaticDoFile=true
+IncludeWaveDo=false
+Type=max
+RunTime=1000ns
+Resolution=1fs
+VsimOpt=
+EntityName=testbench
+TopInstanceName=<top>_0
+DoFileName=
+DoFileName2=wave.do
+DoFileParams=
+DisplayDUTWave=false
+LogAllSignals=false
+DisablePulseFiltering=false
+DumpVCD=false
+VCDFileName=power.vcd
+VHDL2008=false
+Verilog2001=false
+SystemVerilog=false
+TimeUnit=1
+TimeUnitBase=ns
+Precision=100
+PrecisionBase=ps
+ENDLIST
+LIST ModelSimLibPath
+UseCustomPath=FALSE
+LibraryPath=
+ENDLIST
+LIST GlobalFlowOptions
+GenerateHDLAfterSynthesis=FALSE
+GenerateHDLAfterPhySynthesis=FALSE
+RunDRCAfterSynthesis=FALSE
+AutoCheckConstraints=TRUE
+UpdateModelSimIni=TRUE
+NoIOMode=FALSE
+PeriInitStandalone=FALSE
+OnDemandBuildDH=TRUE
+EnableViewDraw=FALSE
+UpdateViewDrawIni=TRUE
+GenerateHDLFromSchematic=TRUE
+VmNetlistFlowOn=TRUE
+EnableDesignSeparationOn=FALSE
+EnableSETMitigationOn=FALSE
+DisplayFanoutLimit=10
+AbortFlowOnPDCErrorsOn=TRUE
+AbortFlowOnSDCErrorsOn=TRUE
+AbortFlowOn3.3V_IO_ON=FALSE
+InstantiateInSmartDesign=TRUE
+FlashProInputFile=pdb
+SmartGenCompileReport=T
+ENDLIST
+LIST PhySynthesisOptions
+ENDLIST
+LIST Profiles
+NAME="SoftConsole"
+FUNCTION="SoftwareIDE"
+TOOL="SoftConsole"
+LOCATION="eclipse.exe"
+PARAM=""
+BATCH=0
+LICENSE=""
+IS32BIT="1"
+EndProfile
+NAME="Synplify Pro ME"
+FUNCTION="Synthesis"
+TOOL="Synplify Pro ME"
+LOCATION="C:\Microchip\Libero_SoC_v2024.2\SynplifyPro\bin\synplify_pro.exe"
+PARAM="-licensetype synplifypro_actel -batch -log synplify.log"
+BATCH=1
+LICENSE=""
+IS32BIT="1"
+EndProfile
+NAME="ModelSim ME Pro"
+FUNCTION="Simulation"
+TOOL="ModelSim Pro Edition"
+LOCATION="C:\Microchip\Libero_SoC_v2024.2\ModelSim\win32acoem\modelsim.exe"
+PARAM=" -l testbench_presynth_simulation.log "
+BATCH=0
+LICENSE=""
+IS32BIT="1"
+EndProfile
+NAME="Identify Debugger"
+FUNCTION="IdentifyDebugger"
+TOOL="Identify Debugger"
+LOCATION="C:\Microchip\Libero_SoC_v2024.2\Identify\bin\identify_debugger.exe"
+PARAM=""
+BATCH=0
+LICENSE=""
+IS32BIT="1"
+EndProfile
+ENDLIST
+LIST ProjectState5.1
+LIST "PLANK_U1106::work"
+LIST Impl1
+ideSYNTHESIS(<project>\synthesis\PLANK_U1106.vm,syn_vm)=StateSuccess
+LIST FlowOptions
+UsePhySynth=FALSE
+UseSynth=TRUE
+UseFhbAutoInst=FALSE
+ENDLIST
+Used_File_List
+ENDUsed_File_List
+ENDLIST
+ENDLIST
+ENDLIST
+LIST ExcludePackageForSimulation
+ENDLIST
+LIST ExcludePackageForSynthesis
+ENDLIST
+LIST IncludeModuleForSimulation
+ENDLIST
+LIST CDBOrder
+ENDLIST
+LIST UserCustomizedFileList
+ENDLIST
+LIST OpenedFileList
+ORIENTATION;HORIZONTAL
+Reports;Reports;0
+ReportsCurrentItem;Run Programming Action:PLANK_U1106_PROGRAM.log
+SmartDesign;PLANK_U1106;0
+HDL;hdl\top_module.v;0
+Constraint Manager;Constraint Manager;0
+StartPage;StartPage;0
+ACTIVEVIEW;Reports
+ENDLIST
+LIST ModuleSubBlockList
+LIST "COREI2C_C1::work","component\work\COREI2C_C1\COREI2C_C1.v","TRUE","FALSE"
+SUBBLOCK "COREI2C_C1_COREI2C_C0_0_COREI2C::work","component\work\COREI2C_C1\COREI2C_C0_0\rtl\vlog\core\corei2c.v","FALSE","FALSE"
+ENDLIST
+LIST "COREI2C_C1_COREI2C_C0_0_COREI2C::work","component\work\COREI2C_C1\COREI2C_C0_0\rtl\vlog\core\corei2c.v","FALSE","FALSE"
+SUBBLOCK "COREI2C_COREI2CREAL::work","component\Actel\DirectCore\COREI2C\7.2.101\rtl\vlog\core\corei2creal.v","FALSE","FALSE"
+SUBBLOCK "COREI2C_COREI2CREAL::work","component\Actel\DirectCore\COREI2C\7.2.101\rtl\vlog\core\corei2creal.v","FALSE","FALSE"
+ENDLIST
+LIST "COREI2C_COREI2CREAL::work","component\Actel\DirectCore\COREI2C\7.2.101\rtl\vlog\core\corei2creal.v","FALSE","FALSE"
+ENDLIST
+LIST "i2c_slave_model::work","hdl\I2C_slave.sv","FALSE","FALSE"
+ENDLIST
+LIST "SPI_Master::work","hdl\spi_master.v","FALSE","FALSE"
+ENDLIST
+LIST "UART_packet_identifier::work","hdl\UART_Packet_Identifier.v","FALSE","FALSE"
+ENDLIST
+LIST "uart_rx::work","hdl\UART_rx.v","FALSE","FALSE"
+ENDLIST
+LIST "uart_tx::work","hdl\UART_tx.v","FALSE","FALSE"
+ENDLIST
+LIST "i2c_slave_model::work","hdl\I2C_slave.sv","FALSE","FALSE"
+ENDLIST
+LIST "FCCC_C0::work","component\work\FCCC_C0\FCCC_C0.v","TRUE","FALSE"
+SUBBLOCK "FCCC_C0_FCCC_C0_0_FCCC::work","component\work\FCCC_C0\FCCC_C0_0\FCCC_C0_FCCC_C0_0_FCCC.v","FALSE","FALSE"
+ENDLIST
+LIST "FCCC_C0_FCCC_C0_0_FCCC::work","component\work\FCCC_C0\FCCC_C0_0\FCCC_C0_FCCC_C0_0_FCCC.v","FALSE","FALSE"
+ENDLIST
+LIST "max11642::work","hdl\max11642.v","FALSE","FALSE"
+SUBBLOCK "SPI_Master::work","hdl\spi_master.v","FALSE","FALSE"
+ENDLIST
+LIST "OSC_C0::work","component\work\OSC_C0\OSC_C0.v","TRUE","FALSE"
+SUBBLOCK "OSC_C0_OSC_C0_0_OSC::work","component\work\OSC_C0\OSC_C0_0\OSC_C0_OSC_C0_0_OSC.v","FALSE","FALSE"
+ENDLIST
+LIST "OSC_C0_OSC_C0_0_OSC::work","component\work\OSC_C0\OSC_C0_0\OSC_C0_OSC_C0_0_OSC.v","FALSE","FALSE"
+SUBBLOCK "RCOSC_25_50MHZ::work","component\Actel\SgCore\OSC\2.0.101\osc_comps.v","FALSE","FALSE"
+ENDLIST
+LIST "PLANK::work","hdl\top_module.v","FALSE","FALSE"
+SUBBLOCK "UART_packet_identifier::work","hdl\UART_Packet_Identifier.v","FALSE","FALSE"
+SUBBLOCK "uart_rx::work","hdl\UART_rx.v","FALSE","FALSE"
+SUBBLOCK "uart_tx::work","hdl\UART_tx.v","FALSE","FALSE"
+SUBBLOCK "max11642::work","hdl\max11642.v","FALSE","FALSE"
+SUBBLOCK "tmp117::work","hdl\tmp117.v","FALSE","FALSE"
+ENDLIST
+LIST "PLANK_U1106::work","component\work\PLANK_U1106\PLANK_U1106.v","TRUE","FALSE"
+SUBBLOCK "FCCC_C0::work","component\work\FCCC_C0\FCCC_C0.v","TRUE","FALSE"
+SUBBLOCK "OSC_C0::work","component\work\OSC_C0\OSC_C0.v","TRUE","FALSE"
+SUBBLOCK "PLANK::work","hdl\top_module.v","FALSE","FALSE"
+ENDLIST
+LIST "PLANK_UART_tb::work","hdl\PLANK_UART_tb.sv","FALSE","FALSE"
+SUBBLOCK "PLANK::work","hdl\top_module.v","FALSE","FALSE"
+ENDLIST
+LIST "RCOSC_1MHZ::work","component\Actel\SgCore\OSC\2.0.101\osc_comps.v","FALSE","FALSE"
+ENDLIST
+LIST "RCOSC_1MHZ_FAB::work","component\Actel\SgCore\OSC\2.0.101\osc_comps.v","FALSE","FALSE"
+ENDLIST
+LIST "RCOSC_25_50MHZ::work","component\Actel\SgCore\OSC\2.0.101\osc_comps.v","FALSE","FALSE"
+ENDLIST
+LIST "RCOSC_25_50MHZ_FAB::work","component\Actel\SgCore\OSC\2.0.101\osc_comps.v","FALSE","FALSE"
+ENDLIST
+LIST "spi_slave::work","hdl\spi_slave.sv","FALSE","FALSE"
+ENDLIST
+LIST "tmp117::work","hdl\tmp117.v","FALSE","FALSE"
+SUBBLOCK "COREI2C_C1::work","component\work\COREI2C_C1\COREI2C_C1.v","TRUE","FALSE"
+ENDLIST
+LIST "tmp117_tb::work","hdl\tmp117_tb.sv","FALSE","FALSE"
+SUBBLOCK "PLANK::work","hdl\top_module.v","FALSE","FALSE"
+SUBBLOCK "i2c_slave_model::work","hdl\I2C_slave.sv","FALSE","FALSE"
+SUBBLOCK "i2c_slave_model::work","hdl\I2C_slave.sv","FALSE","FALSE"
+SUBBLOCK "spi_slave::work","hdl\spi_slave.sv","FALSE","FALSE"
+ENDLIST
+LIST "XTLOSC::work","component\Actel\SgCore\OSC\2.0.101\osc_comps.v","FALSE","FALSE"
+ENDLIST
+LIST "XTLOSC_FAB::work","component\Actel\SgCore\OSC\2.0.101\osc_comps.v","FALSE","FALSE"
+ENDLIST
+LIST "COREI2C_COREI2CREAL::work","component\Actel\DirectCore\COREI2C\7.2.101\rtl\vlog\core\corei2creal.v","FALSE","FALSE"
+ENDLIST
+LIST "i2c_spk::work","component\Actel\DirectCore\COREI2C\7.2.101\rtl\vlog\test\user\i2c_spk.v","FALSE","TRUE"
+ENDLIST
+LIST "testbench::work","component\work\COREI2C_C1\COREI2C_C0_0\rtl\vlog\test\user\tb_user_corei2c.v","FALSE","TRUE"
+SUBBLOCK "COREI2C_C1_COREI2C_C0_0_COREI2C::work","component\work\COREI2C_C1\COREI2C_C0_0\rtl\vlog\core\corei2c.v","FALSE","FALSE"
+SUBBLOCK "i2c_spk::work","component\Actel\DirectCore\COREI2C\7.2.101\rtl\vlog\test\user\i2c_spk.v","FALSE","TRUE"
+ENDLIST
+ENDLIST
+LIST ActiveTestBenchList
+ENDLIST
+LIST IOTabList
+VALUE "constraint\io\plank_u1106.pdc"
+ENDLIST
+LIST FPTabList
+ENDLIST
+LIST TimingTabList
+ENDLIST
+LIST FDCTabList
+ENDLIST
