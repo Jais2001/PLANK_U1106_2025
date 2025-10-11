@@ -1,6 +1,7 @@
 KEY LIBERO "2024.2"
 KEY CAPTURE "2024.2.0.13"
 KEY DEFAULT_IMPORT_LOC "C:\Actelprj\A3P_Verilog_labs\lab2"
+KEY DEFAULT_OPEN_LOC ""
 KEY ProjectID "0"
 KEY HDLTechnology "VERILOG"
 KEY VERILOGMODE "SYSTEMVERILOG"
@@ -209,20 +210,20 @@ IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\work\PLANK_U1106\PLANK_U1106.cxf,actgen_cxf"
 STATE="utd"
-TIME="1756477220"
+TIME="1759928361"
 SIZE="6862"
 ENDFILE
 VALUE "<project>\component\work\PLANK_U1106\PLANK_U1106.v,hdl"
 STATE="utd"
-TIME="1756477219"
+TIME="1759928361"
 SIZE="8246"
 PARENT="<project>\component\work\PLANK_U1106\PLANK_U1106.cxf"
 IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\constraint\io\plank_u1106.pdc,io_pdc"
 STATE="utd"
-TIME="1756476961"
-SIZE="13526"
+TIME="1759906907"
+SIZE="13603"
 IS_TARGET="TRUE"
 ENDFILE
 VALUE "<project>\hdl\I2C_slave.sv,hdl"
@@ -232,8 +233,8 @@ SIZE="11001"
 ENDFILE
 VALUE "<project>\hdl\max11642.v,hdl"
 STATE="utd"
-TIME="1756450862"
-SIZE="6716"
+TIME="1759917102"
+SIZE="6723"
 ENDFILE
 VALUE "<project>\hdl\PLANK_UART_tb.sv,hdl"
 STATE="utd"
@@ -262,8 +263,8 @@ SIZE="4427"
 ENDFILE
 VALUE "<project>\hdl\top_module.v,hdl"
 STATE="utd"
-TIME="1756450827"
-SIZE="16213"
+TIME="1759928252"
+SIZE="16691"
 ENDFILE
 VALUE "<project>\hdl\UART_Packet_Identifier.v,hdl"
 STATE="utd"
@@ -282,32 +283,37 @@ SIZE="4233"
 ENDFILE
 VALUE "<project>\simulation\run.do,do"
 STATE="utd"
-TIME="1756459946"
+TIME="1758520668"
 SIZE="1753"
+ENDFILE
+VALUE "<project>\simulation\subsystem.bfm,sim"
+STATE="utd"
+TIME="1758520667"
+SIZE="233"
 ENDFILE
 VALUE "<project>\simulation\testbench_presynth_simulation.log,log"
 STATE="utd"
-TIME="1756459951"
-SIZE="66"
+TIME="1759932064"
+SIZE="41571855"
 ENDFILE
 VALUE "<project>\synthesis\PLANK_U1106.so,so"
 STATE="utd"
-TIME="1756451233"
+TIME="1758173105"
 SIZE="255"
 ENDFILE
 VALUE "<project>\synthesis\PLANK_U1106.vm,syn_vm"
 STATE="utd"
-TIME="1756454513"
+TIME="1758173105"
 SIZE="557380"
 ENDFILE
 VALUE "<project>\synthesis\PLANK_U1106_syn.prj,prj"
 STATE="utd"
-TIME="1756450963"
-SIZE="2440"
+TIME="1758173106"
+SIZE="4418"
 ENDFILE
 VALUE "<project>\synthesis\PLANK_U1106_vm.sdc,syn_sdc"
 STATE="utd"
-TIME="1756451232"
+TIME="1758173105"
 SIZE="1061"
 ENDFILE
 ENDLIST
@@ -395,7 +401,7 @@ VmNetlistFlowOn=TRUE
 EnableDesignSeparationOn=FALSE
 EnableSETMitigationOn=FALSE
 DisplayFanoutLimit=10
-AbortFlowOnPDCErrorsOn=TRUE
+AbortFlowOnPDCErrorsOn=FALSE
 AbortFlowOnSDCErrorsOn=TRUE
 AbortFlowOn3.3V_IO_ON=FALSE
 InstantiateInSmartDesign=TRUE
@@ -469,12 +475,12 @@ ENDLIST
 LIST OpenedFileList
 ORIENTATION;HORIZONTAL
 Reports;Reports;0
-ReportsCurrentItem;Generate Bitstream:PLANK_U1106_generateBitstream.log
-SmartDesign;PLANK_U1106;0
+ReportsCurrentItem;Export Bitstream:PLANK_U1106_exportBitstream.log
 HDL;hdl\top_module.v;0
 Constraint Manager;Constraint Manager;0
+SmartDesign;PLANK_U1106;0
 StartPage;StartPage;0
-ACTIVEVIEW;PLANK_U1106
+ACTIVEVIEW;Reports
 ENDLIST
 LIST ModuleSubBlockList
 LIST "COREI2C_C1::work","component\work\COREI2C_C1\COREI2C_C1.v","TRUE","FALSE"

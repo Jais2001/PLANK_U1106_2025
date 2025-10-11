@@ -6,7 +6,7 @@
 
 # Family: SmartFusion2 , Die: M2S005 , Package: 400 VF
 
-# Date generated: Fri Aug 29 19:50:57 2025 
+# Date generated: Wed Oct  8 16:15:27 2025 
 
 
 # 
@@ -25,12 +25,6 @@
 # User Locked I/O settings
 # 
 
-set_io i_SPI_MISO     \
-    -pinname T18      \
-    -fixed yes        \
-    -DIRECTION INPUT
-
-
 set_io i_TR_pulse     \
     -pinname E12      \
     -fixed yes        \
@@ -38,7 +32,7 @@ set_io i_TR_pulse     \
 
 
 set_io i_attn_31p5    \
-    -pinname B17      \
+    -pinname C12      \
     -fixed yes        \
     -DIRECTION INPUT
 
@@ -64,6 +58,7 @@ set_io i_rst          \
 set_io i_rx_serial    \
     -pinname A18      \
     -fixed yes        \
+    -RES_PULL Up      \
     -DIRECTION INPUT
 
 
@@ -730,6 +725,7 @@ set_io {o_phase_ch8[5]}  \
 set_io o_tx_serial     \
     -pinname A16       \
     -fixed yes         \
+    -RES_PULL Up       \
     -DIRECTION OUTPUT
 
 

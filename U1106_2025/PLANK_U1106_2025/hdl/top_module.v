@@ -109,6 +109,12 @@ module PLANK(
     reg[87:0] r_ADC_buff_set_data;
     reg[87:0] r_buff_send_ADC;
 
+    reg[31:0] r_Watchdog_VCC;
+    reg[31:0] r_Watchdog_GND;
+    reg[31:0] r_Watchdog_ADC;
+
+    reg r_ADC_valid_buff;
+
     assign w_rst_n = i_rst;
 
 
@@ -216,10 +222,24 @@ module PLANK(
     always @(posedge i_clk or negedge w_rst_n)begin
         if (~w_rst_n) begin
             r_ADC_set_data <= 88'd0;
+            r_ADC_valid_buff <= 1'b0;
+            r_Watchdog_ADC <= 0;
         end else begin
+            r_ADC_valid_buff <= 1'b0;
+
             if (r_ADC_valid) begin
-                r_ADC_set_data <= {r_ADC_data,8'hCC};
+                r_ADC_set_data   <= {r_ADC_data, 8'hCC};
+                r_ADC_valid_buff <= 1'b1;
+                r_Watchdog_ADC   <= 0; 
             end 
+            else if (r_Watchdog_ADC > 32'd1110000) begin
+                r_ADC_set_data   <= {80'd0, 8'hCC};
+                r_ADC_valid_buff <= 1'b1;
+                r_Watchdog_ADC   <= 0; 
+            end 
+            else begin
+                r_Watchdog_ADC   <= r_Watchdog_ADC + 1'b1; 
+            end
         end
     end
 
@@ -227,7 +247,7 @@ module PLANK(
         if (~w_rst_n) begin
             r_ADC_buff_Valid <= 1'b0;
         end else begin
-            r_ADC_buff_Valid <= r_ADC_valid;
+            r_ADC_buff_Valid <= r_ADC_valid_buff;
         end
     end
 
@@ -245,10 +265,6 @@ module PLANK(
     //         end
     //     end
     // end
-
-    reg[31:0] r_Watchdog_VCC;
-    reg[31:0] r_Watchdog_GND;
-    reg[31:0] r_Watchdog_ADC;
 
     reg[1:0] ST_Temp;
     localparam Temp_GND = 2'd1;
@@ -368,7 +384,6 @@ module PLANK(
             r_FDBCK_pending <= 0;
             r_temp_pending <= 0;
             r_ADC_pending <= 1'b0;
-            r_Watchdog_ADC <= 0;
             r_ADC_buff_set_data <= 88'd0;
         end else begin
             r_uart_tx_valid <= 0;
@@ -384,7 +399,6 @@ module PLANK(
             // end
 
             if (r_ADC_buff_Valid) begin
-                r_Watchdog_ADC <= 0;
                 r_ADC_pending <= 1'b1;
                 r_ADC_buff_set_data <= r_ADC_set_data;
             end
