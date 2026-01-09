@@ -6,7 +6,7 @@
 
 # Family: SmartFusion2 , Die: M2S005 , Package: 400 VF
 
-# Date generated: Wed Oct  8 12:31:47 2025 
+# Date generated: Thu Oct 23 11:06:58 2025 
 
 
 # 
@@ -80,16 +80,16 @@ set_io io_sda         \
     -DIRECTION INOUT
 
 
-set_io o_CS            \
-    -pinname P19       \
-    -fixed yes         \
+set_io o_CS                \
+    -pinname P19           \
+    -fixed yes             \
+    -FF_IO_STATE TRISTATE  \
     -DIRECTION OUTPUT
 
 
 set_io o_SPI_Clk       \
     -pinname P20       \
     -fixed yes         \
-    -RES_PULL None     \
     -DIRECTION OUTPUT
 
 
@@ -393,51 +393,67 @@ set_io {o_attn_ch8[5]}  \
     -DIRECTION OUTPUT
 
 
-set_io {o_ch_power[0]}  \
-    -pinname N19        \
-    -fixed yes          \
+set_io {o_ch_power[0]}       \
+    -pinname N19             \
+    -fixed yes               \
+    -FF_IO_STATE LAST_VALUE  \
+    -RES_PULL Up             \
     -DIRECTION OUTPUT
 
 
-set_io {o_ch_power[1]}  \
-    -pinname N20        \
-    -fixed yes          \
+set_io {o_ch_power[1]}       \
+    -pinname N20             \
+    -fixed yes               \
+    -FF_IO_STATE LAST_VALUE  \
+    -RES_PULL Up             \
     -DIRECTION OUTPUT
 
 
-set_io {o_ch_power[2]}  \
-    -pinname E5         \
-    -fixed yes          \
+set_io {o_ch_power[2]}       \
+    -pinname E5              \
+    -fixed yes               \
+    -FF_IO_STATE LAST_VALUE  \
+    -RES_PULL Up             \
     -DIRECTION OUTPUT
 
 
-set_io {o_ch_power[3]}  \
-    -pinname R20        \
-    -fixed yes          \
+set_io {o_ch_power[3]}       \
+    -pinname R20             \
+    -fixed yes               \
+    -FF_IO_STATE LAST_VALUE  \
+    -RES_PULL Up             \
     -DIRECTION OUTPUT
 
 
-set_io {o_ch_power[4]}  \
-    -pinname F5         \
-    -fixed yes          \
+set_io {o_ch_power[4]}       \
+    -pinname F5              \
+    -fixed yes               \
+    -FF_IO_STATE LAST_VALUE  \
+    -RES_PULL Up             \
     -DIRECTION OUTPUT
 
 
-set_io {o_ch_power[5]}  \
-    -pinname F3         \
-    -fixed yes          \
+set_io {o_ch_power[5]}       \
+    -pinname F3              \
+    -fixed yes               \
+    -FF_IO_STATE LAST_VALUE  \
+    -RES_PULL Up             \
     -DIRECTION OUTPUT
 
 
-set_io {o_ch_power[6]}  \
-    -pinname F4         \
-    -fixed yes          \
+set_io {o_ch_power[6]}       \
+    -pinname F4              \
+    -fixed yes               \
+    -FF_IO_STATE LAST_VALUE  \
+    -RES_PULL Up             \
     -DIRECTION OUTPUT
 
 
-set_io {o_ch_power[7]}  \
-    -pinname G2         \
-    -fixed yes          \
+set_io {o_ch_power[7]}       \
+    -pinname G2              \
+    -fixed yes               \
+    -FF_IO_STATE LAST_VALUE  \
+    -RES_PULL Up             \
     -DIRECTION OUTPUT
 
 
