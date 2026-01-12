@@ -123,8 +123,8 @@ module PLANK_UART_tb();
         i_inhibit = 1'b1;
         #50;
         send_Plank;
-        #400
-        $stop;
+        #400;
+        // $stop;
        
     end
 

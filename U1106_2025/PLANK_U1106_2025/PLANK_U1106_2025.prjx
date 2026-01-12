@@ -210,20 +210,20 @@ IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\work\PLANK_U1106\PLANK_U1106.cxf,actgen_cxf"
 STATE="utd"
-TIME="1759928361"
+TIME="1768222432"
 SIZE="6862"
 ENDFILE
 VALUE "<project>\component\work\PLANK_U1106\PLANK_U1106.v,hdl"
 STATE="utd"
-TIME="1759928361"
+TIME="1768222432"
 SIZE="8246"
 PARENT="<project>\component\work\PLANK_U1106\PLANK_U1106.cxf"
 IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\constraint\io\plank_u1106.pdc,io_pdc"
 STATE="utd"
-TIME="1759906907"
-SIZE="13603"
+TIME="1768025690"
+SIZE="14234"
 IS_TARGET="TRUE"
 ENDFILE
 VALUE "<project>\hdl\I2C_slave.sv,hdl"
@@ -233,13 +233,13 @@ SIZE="11001"
 ENDFILE
 VALUE "<project>\hdl\max11642.v,hdl"
 STATE="utd"
-TIME="1759917102"
-SIZE="6723"
+TIME="1768222404"
+SIZE="6912"
 ENDFILE
 VALUE "<project>\hdl\PLANK_UART_tb.sv,hdl"
 STATE="utd"
-TIME="1756450862"
-SIZE="3309"
+TIME="1767963065"
+SIZE="3313"
 ENDFILE
 VALUE "<project>\hdl\spi_master.v,hdl"
 STATE="utd"
@@ -253,7 +253,7 @@ SIZE="4340"
 ENDFILE
 VALUE "<project>\hdl\tmp117.v,hdl"
 STATE="utd"
-TIME="1756450862"
+TIME="1767962098"
 SIZE="11811"
 ENDFILE
 VALUE "<project>\hdl\tmp117_tb.sv,hdl"
@@ -263,8 +263,8 @@ SIZE="4427"
 ENDFILE
 VALUE "<project>\hdl\top_module.v,hdl"
 STATE="utd"
-TIME="1759928252"
-SIZE="16691"
+TIME="1768020159"
+SIZE="16700"
 ENDFILE
 VALUE "<project>\hdl\UART_Packet_Identifier.v,hdl"
 STATE="utd"
@@ -283,37 +283,32 @@ SIZE="4233"
 ENDFILE
 VALUE "<project>\simulation\run.do,do"
 STATE="utd"
-TIME="1758520668"
+TIME="1767967918"
 SIZE="1753"
 ENDFILE
 VALUE "<project>\simulation\subsystem.bfm,sim"
 STATE="utd"
-TIME="1758520667"
+TIME="1767967916"
 SIZE="233"
-ENDFILE
-VALUE "<project>\simulation\testbench_presynth_simulation.log,log"
-STATE="utd"
-TIME="1759932064"
-SIZE="41571855"
 ENDFILE
 VALUE "<project>\synthesis\PLANK_U1106.so,so"
 STATE="utd"
-TIME="1758173105"
+TIME="1768200315"
 SIZE="255"
 ENDFILE
 VALUE "<project>\synthesis\PLANK_U1106.vm,syn_vm"
 STATE="utd"
-TIME="1758173105"
-SIZE="557380"
+TIME="1768200315"
+SIZE="594578"
 ENDFILE
 VALUE "<project>\synthesis\PLANK_U1106_syn.prj,prj"
 STATE="utd"
-TIME="1758173106"
+TIME="1768200315"
 SIZE="4418"
 ENDFILE
 VALUE "<project>\synthesis\PLANK_U1106_vm.sdc,syn_sdc"
 STATE="utd"
-TIME="1758173105"
+TIME="1768200315"
 SIZE="1061"
 ENDFILE
 ENDLIST
@@ -433,7 +428,7 @@ NAME="ModelSim ME Pro"
 FUNCTION="Simulation"
 TOOL="ModelSim Pro Edition"
 LOCATION="C:\Microchip\Libero_SoC_v2024.2\ModelSim\win32acoem\modelsim.exe"
-PARAM=" -l testbench_presynth_simulation.log "
+PARAM=""
 BATCH=0
 LICENSE=""
 IS32BIT="1"
@@ -475,10 +470,12 @@ ENDLIST
 LIST OpenedFileList
 ORIENTATION;HORIZONTAL
 Reports;Reports;0
-ReportsCurrentItem;Export Bitstream:PLANK_U1106_exportBitstream.log
+ReportsCurrentItem;Run Programming Action:PLANK_U1106_PROGRAM.log
 HDL;hdl\top_module.v;0
 Constraint Manager;Constraint Manager;0
 SmartDesign;PLANK_U1106;0
+HDL;hdl\tmp117.v;0
+HDL;hdl\max11642.v;0
 StartPage;StartPage;0
 ACTIVEVIEW;Reports
 ENDLIST

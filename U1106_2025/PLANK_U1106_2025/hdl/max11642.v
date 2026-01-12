@@ -19,6 +19,7 @@ module max11642(
 
     reg r_ADC_valid;
     reg[79:0] r_ADC_data;
+    reg[79:0] r_ADC_data_2_buff;
 
     localparam CONVRSN = 1'b1;
     localparam SETUP = 2'b01;
@@ -93,6 +94,7 @@ module max11642(
             r_start_scan <= 1'd0;
             r_ADC_count <= 2'd0;
             r_ADC_data <= 80'd0;
+            r_ADC_data_2_buff <= 80'd0;
             r_ADC_data_buff <= 16'd0;
             SM_ADC_nxt <= 4'd9;
             r_ADC_valid <= 1'd0;
@@ -162,6 +164,7 @@ module max11642(
                         SM_ADC   <= SM_Start_Scan;
                     end else begin
                         r_ADC_valid <= 1'd1;
+                        r_ADC_data_2_buff <= r_ADC_data;
                         SM_ADC   <= SM_Clear_ADC;
                         chnl_cnt <= 4'd0;
                     end
@@ -169,6 +172,7 @@ module max11642(
                 SM_Clear_ADC : begin
                     SM_ADC   <= SM_Start_Scan;
                     r_ADC_data <= 80'd0;
+                    r_ADC_data_2_buff <= 80'd0;
                 end
                 SM_CS_High : begin
                     SM_ADC <= SM_ADC_nxt;
@@ -200,5 +204,5 @@ module max11642(
 
     assign o_CS = r_CS;
     assign o_ADC_valid = r_ADC_valid;
-    assign o_ADC_data = r_ADC_data;
+    assign o_ADC_data = r_ADC_data_2_buff;
 endmodule

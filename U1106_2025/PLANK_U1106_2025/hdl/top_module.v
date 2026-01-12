@@ -232,7 +232,8 @@ module PLANK(
                 r_ADC_valid_buff <= 1'b1;
                 r_Watchdog_ADC   <= 0; 
             end 
-            else if (r_Watchdog_ADC > 32'd1110000) begin
+            
+            if (r_Watchdog_ADC > 32'd1110000) begin
                 r_ADC_set_data   <= {80'd0, 8'hCC};
                 r_ADC_valid_buff <= 1'b1;
                 r_Watchdog_ADC   <= 0; 
