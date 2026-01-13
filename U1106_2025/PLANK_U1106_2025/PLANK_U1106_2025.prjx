@@ -210,12 +210,12 @@ IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\work\PLANK_U1106\PLANK_U1106.cxf,actgen_cxf"
 STATE="utd"
-TIME="1768222432"
+TIME="1768302603"
 SIZE="6862"
 ENDFILE
 VALUE "<project>\component\work\PLANK_U1106\PLANK_U1106.v,hdl"
 STATE="utd"
-TIME="1768222432"
+TIME="1768302602"
 SIZE="8246"
 PARENT="<project>\component\work\PLANK_U1106\PLANK_U1106.cxf"
 IS_READONLY="TRUE"
@@ -233,8 +233,8 @@ SIZE="11001"
 ENDFILE
 VALUE "<project>\hdl\max11642.v,hdl"
 STATE="utd"
-TIME="1768222404"
-SIZE="6912"
+TIME="1768302814"
+SIZE="7484"
 ENDFILE
 VALUE "<project>\hdl\PLANK_UART_tb.sv,hdl"
 STATE="utd"
@@ -297,7 +297,7 @@ TIME="1768200315"
 SIZE="255"
 ENDFILE
 VALUE "<project>\synthesis\PLANK_U1106.vm,syn_vm"
-STATE="utd"
+STATE="ood"
 TIME="1768200315"
 SIZE="594578"
 ENDFILE
@@ -327,18 +327,6 @@ LIST "PLANK_U1106::work"
 FILE "<project>\component\work\PLANK_U1106\PLANK_U1106.v,hdl"
 LIST PNRConstraints
 VALUE "<project>\constraint\io\plank_u1106.pdc,io_pdc"
-ENDLIST
-LIST ProjectState5.1
-LIST Impl1
-ideSYNTHESIS(<project>\synthesis\PLANK_U1106.vm,syn_vm)=StateSuccess
-LIST FlowOptions
-UsePhySynth=FALSE
-UseSynth=TRUE
-UseFhbAutoInst=FALSE
-ENDLIST
-Used_File_List
-ENDUsed_File_List
-ENDLIST
 ENDLIST
 ENDLIST
 ENDLIST
@@ -428,7 +416,7 @@ NAME="ModelSim ME Pro"
 FUNCTION="Simulation"
 TOOL="ModelSim Pro Edition"
 LOCATION="C:\Microchip\Libero_SoC_v2024.2\ModelSim\win32acoem\modelsim.exe"
-PARAM=""
+PARAM=" -l testbench_presynth_simulation.log "
 BATCH=0
 LICENSE=""
 IS32BIT="1"
@@ -444,18 +432,6 @@ IS32BIT="1"
 EndProfile
 ENDLIST
 LIST ProjectState5.1
-LIST "PLANK_U1106::work"
-LIST Impl1
-ideSYNTHESIS(<project>\synthesis\PLANK_U1106.vm,syn_vm)=StateSuccess
-LIST FlowOptions
-UsePhySynth=FALSE
-UseSynth=TRUE
-UseFhbAutoInst=FALSE
-ENDLIST
-Used_File_List
-ENDUsed_File_List
-ENDLIST
-ENDLIST
 ENDLIST
 LIST ExcludePackageForSimulation
 ENDLIST

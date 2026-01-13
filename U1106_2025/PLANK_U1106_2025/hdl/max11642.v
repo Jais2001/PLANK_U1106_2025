@@ -16,6 +16,7 @@ module max11642(
     reg r_TX_Ready;
     reg r_RX_DV;
     reg[7:0] r_RX_Byte;
+    reg[7:0] r_Rx_buff_byte;
 
     reg r_ADC_valid;
     reg[79:0] r_ADC_data;
@@ -68,6 +69,7 @@ module max11642(
     localparam SM_Send_wait = 4'd10;
     localparam SM_Incrmnt_chnnl = 4'd11;
     localparam SM_Clear_ADC = 4'd12;
+    localparam SM_Check_Byte = 4'd13;
     
     SPI_Master #(
         .SPI_MODE(0),// CPOL=0, CPHA=0
@@ -98,6 +100,7 @@ module max11642(
             r_ADC_data_buff <= 16'd0;
             SM_ADC_nxt <= 4'd9;
             r_ADC_valid <= 1'd0;
+            r_Rx_buff_byte <= 8'd0;
             r_send_ADC_data <= 8'd0;
         end else begin
             r_TX_DV <= 1'b0;
@@ -135,7 +138,17 @@ module max11642(
                 SM_Get_MISO : begin
                     SM_ADC <= SM_Get_MISO;
                     if (r_RX_DV) begin
-                        r_ADC_data_buff <= (r_ADC_data_buff<<8)| r_RX_Byte;
+                        r_Rx_buff_byte <= r_RX_Byte;
+                        SM_ADC <= SM_Check_Byte;
+                    end
+                end
+                SM_Check_Byte : begin
+                    if (r_Rx_buff_byte == r_RX_Byte) begin
+                        r_ADC_data_buff <= (r_ADC_data_buff<<8)| r_Rx_buff_byte;
+                        r_ADC_count <= r_ADC_count + 1'd1;
+                        SM_ADC  <= SM_Set_SCLK_2;
+                    end else begin
+                        r_ADC_data_buff <= (r_ADC_data_buff<<8)| 8'd0;
                         r_ADC_count <= r_ADC_count + 1'd1;
                         SM_ADC  <= SM_Set_SCLK_2;
                     end
