@@ -8,6 +8,51 @@ module PLANK(
     input wire i_attn_31p5,
     input wire i_phase_180,
 
+    input wire i_THT_ID_1,
+    input wire i_THT_ID_2,
+    input wire i_THT_ID_3,
+    input wire i_THT_ID_4,
+    input wire i_THT_ID_5,
+
+    input wire i_BEAM_ID_1,
+    input wire i_BEAM_ID_2,
+    input wire i_BEAM_ID_3,
+    input wire i_BEAM_ID_4,
+    input wire i_BEAM_ID_5,
+    input wire i_BEAM_ID_6,
+
+    input wire i_ERP_MOD_1,
+    input wire i_ERP_MOD_2,
+    input wire i_ERP_MOD_3,
+    input wire i_ERP_MOD_4,
+    input wire i_ERP_MOD_5,
+    input wire i_ERP_MOD_6,
+    input wire i_ERP_MOD_7,
+    input wire i_ERP_MOD_8,
+
+    input wire i_RESET,
+
+    output wire o_THT_ID_1, 
+    output wire o_THT_ID_2, 
+    output wire o_THT_ID_3, 
+    output wire o_THT_ID_4, 
+    output wire o_THT_ID_5, 
+    output wire o_BEAM_ID_1, 
+    output wire o_BEAM_ID_2, 
+    output wire o_BEAM_ID_3, 
+    output wire o_BEAM_ID_4, 
+    output wire o_BEAM_ID_5, 
+    output wire o_BEAM_ID_6, 
+    output wire o_ERP_MOD_1, 
+    output wire o_ERP_MOD_2, 
+    output wire o_ERP_MOD_3, 
+    output wire o_ERP_MOD_4, 
+    output wire o_ERP_MOD_5, 
+    output wire o_ERP_MOD_6, 
+    output wire o_ERP_MOD_7, 
+    output wire o_ERP_MOD_8, 
+    output wire o_RESET,
+
     output wire o_tx_serial,
 
     output wire[7:0] o_ch_power,
@@ -50,6 +95,28 @@ module PLANK(
     localparam CLOCK_FREQ = 100000000;
     localparam BAUD_RATE = 115200;
     localparam CLKS_PER_BIT = CLOCK_FREQ/BAUD_RATE;
+
+
+    wire w_THT_ID_1;
+    wire w_THT_ID_2;
+    wire w_THT_ID_3;
+    wire w_THT_ID_4;
+    wire w_THT_ID_5;
+    wire w_BEAM_ID_1;
+    wire w_BEAM_ID_2;
+    wire w_BEAM_ID_3;
+    wire w_BEAM_ID_4;
+    wire w_BEAM_ID_5;
+    wire w_BEAM_ID_6;         
+    wire w_ERP_MOD_1;
+    wire w_ERP_MOD_2;
+    wire w_ERP_MOD_3;
+    wire w_ERP_MOD_4;
+    wire w_ERP_MOD_5;
+    wire w_ERP_MOD_6;
+    wire w_ERP_MOD_7;
+    wire w_ERP_MOD_8;
+    wire w_RESET;
 
     reg [7:0] r_ch_power;
     reg [5:0] r_attn_ch1;
@@ -116,6 +183,28 @@ module PLANK(
     reg r_ADC_valid_buff;
 
     assign w_rst_n = i_rst;
+
+
+    assign  o_THT_ID_1 = i_THT_ID_1;
+    assign  o_THT_ID_2 = i_THT_ID_2;
+    assign  o_THT_ID_3 = i_THT_ID_3;
+    assign  o_THT_ID_4 = i_THT_ID_4;
+    assign  o_THT_ID_5 = i_THT_ID_5;
+    assign  o_BEAM_ID_1 = i_BEAM_ID_1;
+    assign  o_BEAM_ID_2 = i_BEAM_ID_2;
+    assign  o_BEAM_ID_3 = i_BEAM_ID_3;
+    assign  o_BEAM_ID_4 = i_BEAM_ID_4;
+    assign  o_BEAM_ID_5 = i_BEAM_ID_5;
+    assign  o_BEAM_ID_6 = i_BEAM_ID_6;
+    assign  o_ERP_MOD_1 = i_ERP_MOD_1;
+    assign  o_ERP_MOD_2 = i_ERP_MOD_2;
+    assign  o_ERP_MOD_3 = i_ERP_MOD_3;
+    assign  o_ERP_MOD_4 = i_ERP_MOD_4;
+    assign  o_ERP_MOD_5 = i_ERP_MOD_5;
+    assign  o_ERP_MOD_6 = i_ERP_MOD_6;
+    assign  o_ERP_MOD_7 = i_ERP_MOD_7;
+    assign  o_ERP_MOD_8 = i_ERP_MOD_8;
+    assign  o_RESET = i_RESET;
 
 
     uart_rx #(.CLKS_PER_BIT(CLKS_PER_BIT)) uart_rx_inst

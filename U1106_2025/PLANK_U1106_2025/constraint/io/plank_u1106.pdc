@@ -6,7 +6,7 @@
 
 # Family: SmartFusion2 , Die: M2S005 , Package: 400 VF
 
-# Date generated: Sat Jan 10 11:44:50 2026 
+# Date generated: Mon Feb  9 11:52:05 2026 
 
 
 # 
@@ -25,10 +25,94 @@
 # User Locked I/O settings
 # 
 
+set_io i_BEAM_ID_1    \
+    -pinname E13      \
+    -fixed yes        \
+    -DIRECTION INPUT
+
+
+set_io i_BEAM_ID_2    \
+    -pinname A8       \
+    -fixed yes        \
+    -DIRECTION INPUT
+
+
+set_io i_BEAM_ID_3    \
+    -pinname B11      \
+    -fixed yes        \
+    -DIRECTION INPUT
+
+
+set_io i_BEAM_ID_4    \
+    -pinname A10      \
+    -fixed yes        \
+    -DIRECTION INPUT
+
+
+set_io i_BEAM_ID_5    \
+    -pinname D17      \
+    -fixed yes        \
+    -DIRECTION INPUT
+
+
+set_io i_ERP_MOD_1    \
+    -pinname D14      \
+    -fixed yes        \
+    -DIRECTION INPUT
+
+
+set_io i_ERP_MOD_2    \
+    -pinname C10      \
+    -fixed yes        \
+    -DIRECTION INPUT
+
+
+set_io i_ERP_MOD_3    \
+    -pinname D12      \
+    -fixed yes        \
+    -DIRECTION INPUT
+
+
+set_io i_ERP_MOD_4    \
+    -pinname E11      \
+    -fixed yes        \
+    -DIRECTION INPUT
+
+
 set_io i_SPI_MISO     \
     -pinname T18      \
     -fixed yes        \
     -RES_PULL Up      \
+    -DIRECTION INPUT
+
+
+set_io i_THT_ID_1     \
+    -pinname B18      \
+    -fixed yes        \
+    -DIRECTION INPUT
+
+
+set_io i_THT_ID_2     \
+    -pinname A15      \
+    -fixed yes        \
+    -DIRECTION INPUT
+
+
+set_io i_THT_ID_3     \
+    -pinname A13      \
+    -fixed yes        \
+    -DIRECTION INPUT
+
+
+set_io i_THT_ID_4     \
+    -pinname A14      \
+    -fixed yes        \
+    -DIRECTION INPUT
+
+
+set_io i_THT_ID_5     \
+    -pinname A1       \
+    -fixed yes        \
     -DIRECTION INPUT
 
 
